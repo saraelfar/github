@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalWave Agency - One Page Design</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="nm.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- Include reCAPTCHA -->
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="DigitalWave Agency Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+                <li><a href="#testimonials"><i class="fa-solid fa-comments"></i> Testimonials</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle"><i class="fa-solid fa-bars"></i></div>
+    </div>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>We create solutions for your business</h1>
+            <p>DigitalWave Agency is a full-service digital marketing agency committed to helping businesses of all sizes succeed in the digital era.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        <img src="marke.svg" alt="Hero Image" class="hero-image">
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>We Provide The Best Services</h2>
+    <!-- Added Services with Icons -->
+    <div class="service-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Website Development</h3>
+        <p>Creating attractive and functional websites optimized for search engines.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-search"></i>
+        <h3>Search Engine Optimization (SEO)</h3>
+        <p>Optimizing content and structure to improve rankings on search engines.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>Online Advertising (SEM)</h3>
+        <p>Managing paid advertising campaigns like Google Ads and social media ads.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-file-alt"></i>
+        <h3>Content Marketing</h3>
+        <p>Creating engaging content such as blog posts, videos, and infographics to attract customers.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <h3>Social Media Management</h3>
+        <p>Developing social strategies, creating content, and managing interactions with customers.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email Marketing</h3>
+        <p>Creating and managing email campaigns to communicate with clients and prospects.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-chart-bar"></i>
+        <h3>Data Analysis and Reporting</h3>
+        <p>Monitoring performance and analyzing data to optimize marketing strategies.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-paint-brush"></i>
+        <h3>Branding and Visual Identity</h3>
+        <p>Developing brand image, including logos and marketing materials.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-shopping-cart"></i>
+        <h3>E-commerce</h3>
+        <p>Setting up and optimizing online sales platforms for businesses.</p>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Consultation and Marketing Strategy</h3>
+        <p>Assisting businesses in developing marketing strategies tailored to their needs.</p>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-box">
+        <img src="nacer.jpg" alt="Client 1" class="client-photo">
+        <p>"Great service! Highly recommend."</p>
+        <h4>necer benjeloun</h4>
+        <span class="stars">★★★☆☆</span>
+      </div>
+      <div class="testimonial-box">
+        <img src="ghita.jpg" alt="Client 2" class="client-photo">
+        <p>"Very satisfied with the results."</p>
+        <h4>ghita berrada</h4>
+        <span class="stars">★★★★☆</span>
+      </div>
+      <div class="testimonial-box">
+        <img src="kezi.jpg" alt="Client 3" class="client-photo">
+        <p>"Excellent support and guidance!"</p>
+        <h4>kenzi zniber</h4>
+        <span class="stars">★★★★★</span>
+      </div>
+      <div class="testimonial-box">
+        <img src="mehdi.jpg" alt="Client 4" class="client-photo">
+        <p>"I loved working with this team."</p>
+        <h4>mehdi alami</h4>
+        <span class="stars">★★★★☆</span>
+      </div>
+    </div>
+  </section>
+  
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file">
+
+
+            <button type="submit">Send</button>
+        </form>
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115481!2d-7.981417!3d31.629499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMarrakech%2C%20Morocco!5e0!3m2!1sen!2sfr!4v1606996552873!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <div class="contact-icons">
+            <a href="https://wa.me/your-number" target="_blank" class="icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/your-page" target="_blank" class="icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/your-account" target="_blank" class="icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 DigitalWave Agency. All Rights Reserved.</p>
+</footer>
+
+<script src="nm.js"></script>
+<script src="nm-testimonials.js"></script>
+
+</body>
+</html>

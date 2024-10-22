@@ -1,0 +1,402 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Navbar Styles */
+header {
+  background-color: #001F3F;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FF5733;
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-toggle i {
+  font-size: 1.5em;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this to below the header */
+    left: 0;
+    width: 100%;
+    background-color: #001F3F;
+    display: none;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  background-color: #6A9AB0;
+  color: white;
+  animation: fadeIn 1s;
+  height: 100vh; /* Full screen height */
+  margin-top: 60px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.hero-image {
+  width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+}
+
+/* Button Styles */
+.btn {
+  background-color: #FF5733;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #E04E3C;
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  color: #001F3F;
+}
+
+.service-box {
+  display: inline-block;
+  width: 22%;
+  margin: 10px;
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box i {
+  font-size: 2.5em;
+  color: #3A6D8C;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px;
+  background-color: #EAD8B1;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 20px;
+  color: #001F3F;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-box {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.client-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .testimonial-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: #001F3F;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  width: 100%; /* Ensures full width */
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #FF5733;
+  outline: none;
+}
+
+.contact button {
+  background-color: #001F3F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+  background-color: #FF5733;
+  transform: scale(1.05);
+}
+
+.map-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adds margin above the map */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.space-between {
+  height: 100px; /* Adjust the height as needed for desired spacing */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #001F3F;
+  color: white;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack the form and map vertically */
+  }
+
+  .contact form {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .map-container {
+    width: 100%; /* Full width for the map */
+    height: 300px; /* Adjust height for mobile */
+  }
+}
+
+/* Contact Icons */
+.contact-icons {
+  display: flex;
+  justify-content: center; /* Center the icons */
+  gap: 30px; /* Space between icons */
+  margin-top: 20px; /* Space between heading and icons */
+}
+
+.contact-icons .icon {
+  font-size: 40px; /* Increase icon size */
+  color: #FF5733; /* Change icon color to orange */
+  transition: transform 0.3s; /* Transition effect for hover */
+}
+
+.contact-icons .icon:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
